@@ -1,0 +1,50 @@
+استعراض البيانات وإحصائيات أساسية:
+df.describe(): إحضار إحصائيات ملخصة للأعمدة الرقمية في الإطار.
+التصفية والتجميع:
+df.groupby('اسم_العمود').agg({'عمود_التجميع': 'دالة_التجميع'}): تجميع البيانات بناءً على عمود وتطبيق دالة التجميع.
+df.pivot_table(index='عمود_فهرس', columns='عمود_أعمدة', values='قيمة', aggfunc='دالة_تجميع'): إنشاء جدول محوري.
+df.filter(like='كلمة_البحث', axis=1): تصفية الأعمدة باستخدام كلمة البحث.
+رسم البيانات باستخدام Matplotlib/Seaborn:
+plt.plot(x, y): رسم خط.
+plt.scatter(x, y): رسم نقاط.
+plt.bar(x, y): رسم عمودي.
+plt.hist(data, bins=عدد_الفاصلة): رسم توزيع التحليل.
+plt.boxplot(data): رسم مربع العلبة (Boxplot).
+sns.heatmap(data): رسم خريطة الحرارة.
+sns.pairplot(data): رسم الرسوم البيانية لكل زوج من الأعمدة.
+sns.countplot(x='اسم_العمود', data=df): رسم عدد القيم المميزة.
+إضافة تحسينات إلى الرسومات:
+plt.title('عنوان الرسم'): إضافة عنوان للرسم.
+plt.xlabel('اسم العمود X'): إضافة تسمية لمحور X.
+plt.ylabel('اسم العمود Y'): إضافة تسمية لمحور Y.
+plt.legend(['مفتاح1', 'مفتاح2']): إضافة مفاتيح الرسم.
+هذه الأوامر تمثل مجموعة أساسية من الأدوات التي يمكن استخدامها لتحليل ورسم البيانات باستخدام Pandas و Matplotlib/Seaborn. يمكنك تخصيص واستخدام هذه الأوامر بناءً على احتياجات تحليل البيانات الخاصة بك.
+
+
+==============================================================================================================================================
+Data Overview and Basic Statistics:
+df.describe(): Get summary statistics for numeric columns in the DataFrame.
+Filtering and Aggregation:
+df.groupby('column_name').agg({'aggregated_column': 'aggregation_function'}): Group data by a column and apply an aggregation function.
+df.pivot_table(index='index_column', columns='columns_columns', values='value', aggfunc='aggregation_function'): Create a pivot table.
+df.filter(like='search_keyword', axis=1): Filter columns using a search keyword.
+Data Visualization with Matplotlib/Seaborn:
+plt.plot(x, y): Plot a line chart.
+plt.scatter(x, y): Plot scatter points.
+plt.bar(x, y): Plot vertical bar chart.
+plt.hist(data, bins=num_bins): Plot a histogram.
+plt.boxplot(data): Plot a box plot.
+sns.heatmap(data): Plot a heatmap.
+sns.pairplot(data): Plot pairwise scatter plots for each column pair.
+sns.countplot(x='column_name', data=df): Plot the count of distinct values.
+Enhancements to Visualizations:
+plt.title('Plot Title'): Add a title to the plot.
+plt.xlabel('X-axis Label'): Add a label to the X-axis.
+plt.ylabel('Y-axis Label'): Add a label to the Y-axis.
+plt.legend(['Legend1', 'Legend2']): Add legends to the plot.
+These commands represent a core set of tools that can be used for data analysis and visualization using Pandas and Matplotlib/Seaborn. You can customize and use these commands based on your specific data analysis needs.
+
+
+
+
+

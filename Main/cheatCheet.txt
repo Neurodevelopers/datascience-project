@@ -1,0 +1,64 @@
+Data Import and Basic Info
+pd.read_csv('filename.csv'): Read a CSV file into a DataFrame.
+df.head(): Display the first few rows of the DataFrame.
+df.info(): Display information about the DataFrame, including data types and missing values.
+df.describe(): Display summary statistics for numerical columns.
+Data Selection and Filtering
+df['column_name']: Select a single column by name.
+df[['col1', 'col2']]: Select multiple columns by name.
+df.loc[row_indexer, col_indexer]: Select rows and columns by labels.
+df.iloc[row_indexer, col_indexer]: Select rows and columns by integer positions.
+df[df['column_name'] > value]: Filter rows based on a condition.
+Data Cleaning
+df.drop(columns=['col1', 'col2']): Drop specified columns.
+df.dropna(): Remove rows with missing values.
+df.fillna(value): Fill missing values with a specified value.
+Data Transformation
+df['new_col'] = df['col1'] + df['col2']: Create a new column based on existing columns.
+df.rename(columns={'old_name': 'new_name'}): Rename columns.
+df.sort_values(by='column_name'): Sort DataFrame by a column.
+df.groupby('column_name').agg({'agg_col': 'agg_func'}): Group by a column and perform aggregation.
+Data Exploration
+df['column_name'].value_counts(): Count unique values in a column.
+df.nlargest(n, 'column_name'): Get the top N rows based on a column.
+df['column_name'].unique(): Get unique values in a column.
+df['column_name'].mean(): Calculate the mean of a column.
+Data Export
+df.to_csv('filename.csv', index=False): Export DataFrame to a CSV file.
+df.to_excel('filename.xlsx', index=False): Export DataFrame to an Excel file.
+These commands should cover many common operations when working with Pandas DataFrames. Customize and combine them to suit your specific data analysis needs.
+
+
+
+=================================================================================================================================================================
+
+
+استيراد البيانات والمعلومات الأساسية
+pd.read_csv('اسم_الملف.csv'): قراءة ملف CSV إلى إطار بيانات.
+df.head(): عرض أول عدد قليل من الصفوف في الإطار.
+df.info(): عرض معلومات حول الإطار، بما في ذلك أنواع البيانات والقيم المفقودة.
+df.describe(): عرض إحصائيات ملخصة للأعمدة الرقمية.
+اختيار البيانات والتصفية
+df['اسم_العمود']: اختيار عمود واحد باسمه.
+df[['عمود1', 'عمود2']]: اختيار عدة أعمدة بأسمائها.
+df.loc[محدد_الصفوف, محدد_الأعمدة]: اختيار الصفوف والأعمدة بواسطة العلامات.
+df.iloc[محدد_الصفوف, محدد_الأعمدة]: اختيار الصفوف والأعمدة بواسطة المواقع الصحيحة.
+df[df['اسم_العمود'] > قيمة]: تصفية الصفوف بناءً على شرط معين.
+تنظيف البيانات
+df.drop(columns=['عمود1', 'عمود2']): حذف الأعمدة المحددة.
+df.dropna(): إزالة الصفوف التي تحتوي على قيم مفقودة.
+df.fillna(قيمة): ملء القيم المفقودة بقيمة محددة.
+تحويل البيانات
+df['عمود_جديد'] = df['عمود1'] + df['عمود2']: إنشاء عمود جديد بناءً على أعمدة موجودة.
+df.rename(columns={'اسم_العمود_القديم': 'اسم_العمود_الجديد'}): إعادة تسمية الأعمدة.
+df.sort_values(by='اسم_العمود'): فرز الإطار بيانات بناءً على عمود معين.
+df.groupby('اسم_العمود').agg({'عمود_التجميع': 'دالة_التجميع'}): تجميع البيانات بناءً على عمود وتطبيق دالة تجميع.
+استكشاف البيانات
+df['اسم_العمود'].value_counts(): عد القيم المميزة في عمود معين.
+df.nlargest(n, 'اسم_العمود'): الحصول على أعلى N صفوف بناءً على عمود معين.
+df['اسم_العمود'].unique(): الحصول على القيم المميزة في عمود معين.
+df['اسم_العمود'].mean(): حساب المتوسط لعمود معين.
+تصدير البيانات
+df.to_csv('اسم_الملف.csv', index=False): تصدير الإطار بيانات إلى ملف CSV.
+df.to_excel('اسم_الملف.xlsx', index=False): تصدير الإطار بيانات إلى ملف Excel.
+هذه الأوامر يجب أن تغطي العديد من العمليات الشائعة عند العمل مع إطارات البيانات في Pandas. يمكنك تخصيص ودمج هذه الأوامر وفقًا لاحتياجات تحليل البيانات الخاصة بك.

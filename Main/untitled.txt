@@ -1,0 +1,6 @@
+### Web Scraping with Beautiful Soup and Requests
+
+1. **Import Libraries**:
+   ```python
+   from bs4 import BeautifulSoup
+   import requests
